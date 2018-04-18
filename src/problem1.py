@@ -37,8 +37,16 @@ def run_test_problem1():
     print('--------------------------------------------------')
 
     #Test 1:
-    actual = problem1(Rect)
-    print('actual:', actual)
+    AREA = problem1([Rect(9, 4),Rect(3, 2),Rect(130, 3)])
+    print('Area:', AREA)
+
+    # Test 2:
+    AREA = problem1([Rect(2, 15), Rect(16, 7), Rect(88, 8)])
+    print('Area:', AREA)
+
+    # Test 3:
+    AREA = problem1([Rect(2, 17), Rect(13, 12), Rect(30, 53)])
+    print('Area:', AREA)
 
 
 def problem1(rectangles):
