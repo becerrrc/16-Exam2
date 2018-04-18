@@ -37,8 +37,8 @@ def run_test_problem1():
     print('--------------------------------------------------')
 
     #Test 1:
-    #actual = problem1(Rect)
-    #print('actual:', actual)
+    actual = problem1(Rect)
+    print('actual:', actual)
 
 
 def problem1(rectangles):

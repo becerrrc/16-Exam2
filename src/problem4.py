@@ -18,8 +18,8 @@ def main():
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
 
-    run_test_problem4a()
-    #run_test_problem4b()
+    #run_test_problem4a()
+    run_test_problem4b()
 
 
 ###############################################################################
@@ -156,9 +156,18 @@ def problem4a(strings):
     # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    sting = ''
     for k in range(len(strings)):
-        if is_prime(strings[k]) < 2:
-            print(strings[k])
+        s = strings[k]
+        if is_prime(len(s)) == True:
+            if s == '':
+                pass
+            else:
+                sting = sting + s
+                return sting
+    return -1
+
+
 
 
 
@@ -259,9 +268,8 @@ def problem4b(list_of_tuples_of_strings):
     #                    AND HAS AN ELEGANT SOLUTION.  DO NOT GET STUCK ON IT!
     # -------------------------------------------------------------------------
     for k in range(len(list_of_tuples_of_strings)):
-        if is_prime(len(list_of_tuples_of_strings)) < 2:
+
             return True
-    return False
 
 
 ###############################################################################

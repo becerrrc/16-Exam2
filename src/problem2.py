@@ -157,16 +157,16 @@ def problem2(n, seq):
     # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-    list = []
+    l = []
     for k in range(len(seq)):
         if seq[k] < n:
-            list = list + [seq[k]]
-            if len(list) ==3:
+            l = l + [seq[k]]
+            if len(l) == 3:
                 break;
-    if len(list) < 3:
+    if len(l) < 3:
         return 'Too Few'
     else:
-        return list
+        return l
 
 
 
